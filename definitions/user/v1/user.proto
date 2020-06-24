@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package janxyz.user.v1;
+
+option go_package = "v1pb";
+option java_multiple_files = true;
+option java_outer_classname = "UserProto";
+option java_package = "com.janxyz.user.v1";
+
+// user describes a user.
+message User {
+
+  string id =1;
+  string name =2;
+}
